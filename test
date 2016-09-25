@@ -1,0 +1,28 @@
+# coding: gbk
+import os
+import base64
+import random
+import time
+import json
+import hmac
+from datetime import datetime, timedelta
+
+#os.system("dir")
+
+# a=b=2
+# print a
+# print b
+
+# print dict(a=1,b=2,c=3)  # dict() -> new empty dictionary
+
+# r=random.random()
+# print r
+# print unicode(r).decode("ascii")
+
+# print json.dumps(dict(a=1,b=2,c=3)) # change to a string
+
+
+# 使用hmac为消息生成签名
+def _get_signature(value):
+    """Calculate the HMAC signature for the given value."""
+    return hmac.new('secret123456', value).digest()

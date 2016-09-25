@@ -1,0 +1,7 @@
+import base64
+
+encode_str=base64.b64encode("lzw:123","utf-8")
+print  encode_str
+decode_str=base64.b64decode(encode_str,"utf-8")
+print  decode_str
+
